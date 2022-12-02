@@ -33,7 +33,6 @@ public class UnitMovment : NetworkBehaviour
         if (!Input.GetMouseButtonDown(0)) return;
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         if (!Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity)) return;
-
         CmdMove(hit.point);
      }
     #endregion
