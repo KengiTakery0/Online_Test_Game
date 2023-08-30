@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telepathy", "Telepathy.cspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror.Components", "Mirror.Components.csproj", "{B2976A83-4B3E-91F2-842B-FB0EE34B067C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{BC2EE501-CAC2-2553-59AE-8CC126C8E49B}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kcp2k", "kcp2k.csproj", "{649D6974-371E-FBD4-7577-4A82D03BE311}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWebTransport", "SimpleWebTransport.csproj", "{27801590-DFA0-ACB0-FE36-8C73FC4DE957}"
@@ -16,8 +18,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "where-allocations", "where-allocations.csproj", "{83EF4E61-781F-0DD3-845E-E1724515C6EE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror.Authenticators", "Mirror.Authenticators.csproj", "{04922C0F-F27C-4F4D-BB93-51CD1AA27798}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{BC2EE501-CAC2-2553-59AE-8CC126C8E49B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Mirror.CodeGen", "Unity.Mirror.CodeGen.csproj", "{9566C517-8E7E-2C34-314A-06693E0E7AA1}"
 EndProject
@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telepathy", "Telepathy.Play
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror.Components", "Mirror.Components.Player.csproj", "{8F3EB890-44EC-9A5A-C1CC-2880C5ACF80F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.Player.csproj", "{714A20EC-9485-F04A-6115-BA5BF238AEBD}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kcp2k", "kcp2k.Player.csproj", "{068381FE-D2E2-4F71-00D6-C55C342929A3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWebTransport", "SimpleWebTransport.Player.csproj", "{E34BA849-DB80-80FB-40F5-C138A95FE6FA}"
@@ -40,8 +42,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "where-allocations", "where-allocations.Player.csproj", "{8D0A65ED-7667-A792-2418-DF7EBFC1C500}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror.Authenticators", "Mirror.Authenticators.Player.csproj", "{0335F49B-E015-1BAF-43A4-094B862D234E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.Player.csproj", "{714A20EC-9485-F04A-6115-BA5BF238AEBD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +65,10 @@ Global
 		{B2976A83-4B3E-91F2-842B-FB0EE34B067C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2976A83-4B3E-91F2-842B-FB0EE34B067C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2976A83-4B3E-91F2-842B-FB0EE34B067C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC2EE501-CAC2-2553-59AE-8CC126C8E49B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC2EE501-CAC2-2553-59AE-8CC126C8E49B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC2EE501-CAC2-2553-59AE-8CC126C8E49B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC2EE501-CAC2-2553-59AE-8CC126C8E49B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{649D6974-371E-FBD4-7577-4A82D03BE311}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{649D6974-371E-FBD4-7577-4A82D03BE311}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{649D6974-371E-FBD4-7577-4A82D03BE311}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -81,10 +85,6 @@ Global
 		{04922C0F-F27C-4F4D-BB93-51CD1AA27798}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04922C0F-F27C-4F4D-BB93-51CD1AA27798}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04922C0F-F27C-4F4D-BB93-51CD1AA27798}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BC2EE501-CAC2-2553-59AE-8CC126C8E49B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BC2EE501-CAC2-2553-59AE-8CC126C8E49B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BC2EE501-CAC2-2553-59AE-8CC126C8E49B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BC2EE501-CAC2-2553-59AE-8CC126C8E49B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9566C517-8E7E-2C34-314A-06693E0E7AA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9566C517-8E7E-2C34-314A-06693E0E7AA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9566C517-8E7E-2C34-314A-06693E0E7AA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -113,6 +113,10 @@ Global
 		{8F3EB890-44EC-9A5A-C1CC-2880C5ACF80F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F3EB890-44EC-9A5A-C1CC-2880C5ACF80F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F3EB890-44EC-9A5A-C1CC-2880C5ACF80F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{714A20EC-9485-F04A-6115-BA5BF238AEBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{714A20EC-9485-F04A-6115-BA5BF238AEBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{714A20EC-9485-F04A-6115-BA5BF238AEBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{714A20EC-9485-F04A-6115-BA5BF238AEBD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{068381FE-D2E2-4F71-00D6-C55C342929A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{068381FE-D2E2-4F71-00D6-C55C342929A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{068381FE-D2E2-4F71-00D6-C55C342929A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -129,10 +133,6 @@ Global
 		{0335F49B-E015-1BAF-43A4-094B862D234E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0335F49B-E015-1BAF-43A4-094B862D234E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0335F49B-E015-1BAF-43A4-094B862D234E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{714A20EC-9485-F04A-6115-BA5BF238AEBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{714A20EC-9485-F04A-6115-BA5BF238AEBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{714A20EC-9485-F04A-6115-BA5BF238AEBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{714A20EC-9485-F04A-6115-BA5BF238AEBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

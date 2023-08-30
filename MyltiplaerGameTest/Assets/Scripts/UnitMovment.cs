@@ -9,7 +9,7 @@ public class UnitMovment : NetworkBehaviour
 {
     [SerializeField] NavMeshAgent agent = null;
     Camera mainCamera;
-
+    [SerializeField] Transform camera;
     #region Server
     [Command]
     void CmdMove(Vector3 pos)
@@ -22,7 +22,10 @@ public class UnitMovment : NetworkBehaviour
     #region Client
     public override void OnStartAuthority()
     {
+
+      
         mainCamera = Camera.main;
+        camera.gameObject.SetActive(true);
     }
 
     [ClientCallback]
@@ -30,7 +33,7 @@ public class UnitMovment : NetworkBehaviour
     private void Update()
     {
         if (!hasAuthority) return;
-        if (!Input.GetMouseButtonDown(0)) return;
+        if (!Input.GetMouseButtonDown(1)) return;
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         if (!Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity)) return;
         CmdMove(hit.point);
